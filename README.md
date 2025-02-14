@@ -15,27 +15,39 @@ This project focuses on acquiring, publishing, and analyzing GPS data using a US
 ## Installations
 
 sudo apt update
+
 sudo apt install ros-noetic-ros-base
+
 source /opt/ros/noetic/setup.bash
 
 pip3 install utm bagpy
+
 sudo apt install python3-serial
 
 ## Tasks Completed
 
 -**Developed a ROS1 GPS Device Driver**: Implemented a Python script to read, parse, and process NMEA GPGGA sentences over serial communication.
+
 -**Latitude/Longitude to UTM Conversion**: Integrated the utm package to transform raw GPS coordinates into UTM easting and northing values.
+
 -**Custom ROS1 Message Definition**: Created a custom ROS1 msg (gps_msg.msg) file to define nine fields of GPS data, including latitude, longitude, altitude, horizontal dilution of precision (HDOP), and UTM coordinates.
+
 -**ROS1 Publisher Implementation**: Developed a ROS1 node that continuously reads GPS data and publishes messages on the /gps topic.
+
 -**Data Storage in ROS Bag Files**: Collected and stored raw GPS data in .bag files for analysis.
+
 -**Statistical Analysis of GPS Data**: Processed collected data to assess positional accuracy, GPS drift, and error estimation.
 
 ## Key Learnings
 
 -**Interfacing with Serial Devices in ROS1**: Understood how to handle real-time data acquisition from external sensors over USB using the pyserial package.
+
 -**Designing Modular ROS Nodes**: Learned how to structure a ROS1 package effectively, ensuring reusability and scalability of the GPS driver.
+
 -**Custom Message Definition in ROS1**: Explored how to define and publish custom messages using msg files for handling structured sensor data.
+
 -**Launch File Configuration for Flexibility**: Understood how to use ROS1 launch files to dynamically handle hardware-specific configurations, such as specifying different serial ports.
+
 -**Error Analysis and Statistical Validation**: Understood the GPS accuracy limitations, the impact of environmental obstructions, and how to evaluate errors using scatter plots, histograms, and numerical error estimation.
 -**Working with ROS Bag Files**: Recorded, played back, and extracted GPS data using ROS bag files for offline analysis.
 
@@ -45,7 +57,9 @@ sudo apt install python3-serial
 GPS data was collected under three different environmental conditions:
 
 1.**Stationary Open Environment** – Clear sky, minimal obstructions.
+
 2.**Stationary Occluded Environment** – Near buildings or trees.
+
 3.**Moving Data Collection** – Walking in a straight line for 200-300 meters.
 
 ## Analysis
