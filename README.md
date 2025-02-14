@@ -1,4 +1,4 @@
-# ROS1 Based GPPS Navigation
+# ROS1 Based GPS Navigation
 
 ## Goal
 
