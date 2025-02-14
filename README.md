@@ -79,7 +79,9 @@ GPS data was collected under three different environmental conditions:
 ## Error Analysis:
 
 -Identified potential GPS error sources, including multipath interference, satellite signal loss, and atmospheric effects.
+
 -Analyzed the impact of environmental obstructions on GPS accuracy.
+
 -Compared HDOP values to observed positioning errors for correlation analysis.
 
 ## Sources of Error Encountered
